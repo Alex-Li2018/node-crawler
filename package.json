@@ -1,0 +1,25 @@
+{
+  "name": "node-crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node ./src/main.js",
+    "dev-qy": "node ./src/main-quanyou.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex-Li2018/node-crawler.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alex-Li2018/node-crawler/issues"
+  },
+  "homepage": "https://github.com/Alex-Li2018/node-crawler#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "request": "^2.88.0"
+  }
+}

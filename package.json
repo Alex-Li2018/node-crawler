@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/Alex-Li2018/node-crawler#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.3",
+    "node-xlsx": "^0.16.1",
     "request": "^2.88.0"
   }
 }

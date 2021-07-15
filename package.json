@@ -21,6 +21,8 @@
   "dependencies": {
     "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.3",
+    "formdata-node": "^3.5.4",
+    "js-md5": "^0.7.3",
     "node-xlsx": "^0.16.1",
     "request": "^2.88.0"
   }

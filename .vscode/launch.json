@@ -7,11 +7,11 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "zhihu",
+            "name": "xiaohongshu",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\src/crawler-zhihu-Author.js"
+            "program": "${workspaceFolder}\\src/xiaohongshu/index.js"
         }
     ]
 }

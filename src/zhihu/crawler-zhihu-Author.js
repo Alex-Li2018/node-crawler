@@ -88,7 +88,7 @@ function writeXlsxHandler(data) {
             data: data
         }
     ]);
-    fs.writeFile('./src/zhihuAuthor.xls', buffer, function (err) {
+    fs.writeFile('./src/zhihu/zhihuAuthor.xls', buffer, function (err) {
         if (err)
             throw err;
         console.log('Write to xls has finished');

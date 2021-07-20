@@ -15,7 +15,7 @@ content.forEach((item, index) => {
 });
 
 // 写markdown格式
-fs.writeFile('./src/zhihuAuthor.md', str, 'utf-8', function (err) {
+fs.writeFile('./src/zhihu/zhihuAuthor.md', str, 'utf-8', function (err) {
     if (err)
         throw err;
     console.log('Write to md has finished');

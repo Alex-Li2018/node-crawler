@@ -1,0 +1,17 @@
+{
+  "name": "jd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "fs-extra": "^10.0.0",
+    "node-schedule": "^2.1.0",
+    "request": "^2.88.2"
+  },
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

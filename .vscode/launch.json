@@ -5,13 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch node",
             "type": "node",
             "request": "launch",
-            "name": "xiaohongshu",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "program": "${workspaceFolder}\\src/xiaohongshu/index.js"
+            "cwd": "${workspaceRoot}/src/jd",
+            "runtimeExecutable": "npm",
+            "windows": { "runtimeExecutable": "npm.cmd" },
+            "runtimeArgs": [ "run", "dev" ],
+            "console": "integratedTerminal",
+            "protocol": "auto",
+            "restart": true,
+            "port": 9229,
+            "autoAttachChildProcesses": true
         }
     ]
 }

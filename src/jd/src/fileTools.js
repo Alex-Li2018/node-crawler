@@ -34,7 +34,6 @@ function Log(file, filename, data) {
         }
 
         fs.ensureFile(`${file}/${filename}.md`, function(err) {
-            console.log(data)
             appendWritemdFile(`${file}/${filename}.md`, data)
         })
     })

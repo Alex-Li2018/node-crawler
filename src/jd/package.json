@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "fs-extra": "^10.0.0",
+    "log4js": "^6.3.0",
     "node-schedule": "^2.1.0",
     "request": "^2.88.2"
   },

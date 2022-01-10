@@ -28,8 +28,8 @@ class JDScript {
             JingDongBean(this.cookies, this.stop),
             // JingDongStore(this.cookies, this.stop),
             // JingDongCash(this.cookies, this.stop),
-            JingDongShakeBean(this.cookies, this.stop),
-            jdLukyDraw(this.cookies, this.stop)
+            // JingDongShakeBean(this.cookies, this.stop),
+            // jdLukyDraw(this.cookies, this.stop)
         ])
         res.forEach(item => {
             str += `

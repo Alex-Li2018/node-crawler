@@ -1,3 +1,6 @@
+# 东八区的时间
+ENV TZ Asia/Shanghai
+
 FROM node:15
 
 # Create app directory

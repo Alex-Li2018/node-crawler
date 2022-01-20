@@ -1,6 +1,3 @@
-# 东八区的时间
-ENV TZ Asia/Shanghai
-
 FROM node:15
 
 # Create app directory
@@ -17,6 +14,10 @@ RUN npm install
 
 # Bundle app source
 COPY . .
+
+# 东八区的时间
+RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+RUN echo 'Asia/Shanghai' >/etc/timezone
 
 EXPOSE 9090
 CMD [ "node", "index.js" ]

@@ -12,14 +12,14 @@ function JingDongShakeBean(KEY, s) {
     return new Promise(resolve => {
         setTimeout(() => {
           const JDBUrl = {
-            url: 'https://api.m.jd.com',
+            url: 'https://api.m.jd.com/',
             headers: {
               Cookie: KEY,
               Host: 'api.m.jd.com',
               origin: 'https://spa.jd.com',
               referer: 'https://spa.jd.com'
             },
-            body: 'functionId=pg_interact_interface_invoke&appid=sharkBean'
+            body: 'appid=sharkBean&functionId=pg_interact_interface_invoke&body=%7B%22floorToken%22:%22f1d574ec-b1e9-43ba-aa84-b7a757f27f0e%22,%22dataSourceCode%22:%22signIn%22,%22argMap%22:%7B%22currSignCursor%22:1%7D%7D'
           };
           $http.post(JDBUrl, function(error, response, data) {
             try {

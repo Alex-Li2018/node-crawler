@@ -2,9 +2,9 @@
 
 const $http = require('./http')()
 
-function jingDongLukyDraw(KEY, s) {
+function jdCaseAndBag(KEY, s) {
     const JDBean = {
-        name: '京东天天抽奖',
+        name: '京东箱包专场',
         notify: '',
         fail: null,
         success: null
@@ -16,10 +16,10 @@ function jingDongLukyDraw(KEY, s) {
             headers: {
               Cookie: KEY,
               Host: 'api.m.jd.com',
-              origin: 'https://h5.m.jd.com',
-              referer: 'https://h5.m.jd.com/'
+              origin: 'https://pro.m.jd.com',
+              referer: 'https://pro.m.jd.com/'
             },
-            body: 'functionId=lotteryForTurntableFarm&appid=wh5&body=%7B%22type%22%3A1%2C%22version%22%3A4%2C%22channel%22%3A1%7D'
+            body: 'functionId=doInteractiveAssignment'
           };
           $http.post(JDBUrl, function(error, response, data) {
             try {
@@ -46,4 +46,4 @@ function jingDongLukyDraw(KEY, s) {
       });
 }
 
-module.exports = jingDongLukyDraw
+module.exports = jdCaseAndBag

@@ -5,8 +5,8 @@ const JingDongBean = require('./jdBean')
 const JingDongPetSignBean = require('./jdPetSign')
 const JingDongShakeBean = require('./jdShakeBean')
 const jdLukyDraw = require('./jdLukyDraw')
+const jdCaseAndBag = require('./jdCaseAndBag')
 
-// const jdCaseAndBag = require('./jdCaseAndBag')
 // const JingDongStore = require('./jdStore')
 // const JingDongCash = require('./jsCash')
 const log4js= require('./log')
@@ -30,12 +30,12 @@ class JDScript {
     async requestAll() {
         let str = ''
         const res = await Promise.all([
-            JingDongBean(this.cookies, this.stop),
-            JingDongPetSignBean(this.cookies, this.stop + 1000),
-            jdLukyDraw(this.cookies_app, this.stop + 2000),
-            JingDongShakeBean(this.cookies_app, this.stop + 3000),
+            // JingDongBean(this.cookies, this.stop),
+            // JingDongPetSignBean(this.cookies, this.stop + 1000),
+            // jdLukyDraw(this.cookies_app, this.stop + 2000),
+            // JingDongShakeBean(this.cookies_app, this.stop + 3000),
+            jdCaseAndBag(this.cookies_app, this.stop + 4000)
 
-            // jdCaseAndBag(this.cookies_app, this.stop)
             // JingDongStore(this.cookies, this.stop),
             // JingDongCash(this.cookies, this.stop),
         ])
